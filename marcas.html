@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu principal</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./banner-principal.css" />
+    <link rel="stylesheet" href="./menu-principal.css" />
+    <link rel="stylesheet" href="./talleres.css" />
+    <link rel="stylesheet" href="./footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches:400%7CRoboto:400%2C300&amp;display=swap"
+      rel="stylesheet"
+      property="stylesheet"
+      media="all"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div class="header__top-message">
+      <div class="container">
+        <h3>Tenemos más de 91 años en el sector automotriz</h3>
+        <div class="contact-button">
+          <a href="#contacto">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header__main container">
+        <div class="logo" id="header_logo">
+          <div class="logo-container">
+            <img src="./assets/img/logo-manucci-azul.png" alt="Logo Manucci" />
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="/">Inicio</a></li>
+            <li class="header__nav-item">
+              <a href="/nosotros.html">Nosotros</a>
+            </li>
+            <li class="header__nav-item"><a href="/marcas.html">Marcas</a></li>
+            <li class="header__nav-item">
+              <a href="/servicios.html">Servicios</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="banner">
+      <!-- <img src="banner.png" /> -->
+      <video autoplay muted loop class="banner__video">
+        <source src="./assets/video/banner-principal.mp4" type="video/mp4" />
+      </video>
+      <div class="banner__text container">
+        <h1 class="banner__title">Marcas</h1>
+        <p class="banner__caption">
+          Somos concesionarios de marcas de alto nivel en el país
+        </p>
+      </div>
+      <div class="banner__arrow">
+        <a href="#" class="fa-solid fa-chevron-down"></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__column">
+          <p>
+            Manucci Diesel (MADISAC) brinda soluciones de posventa para camiones
+            VOLVO, MACK, UD Trucks y SDLG en sus talleres de mantenimiento y
+            tiendas de repuestos.
+          </p>
+        </div>
+        <div class="footer__column">
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <div class="footer__contact-title">Oficina principal</div>
+              <div class="footer__contact-text">
+                Av. Mansiche 480, Urb. Las Quintanas - Trujillo
+              </div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-title">Central telefónica</div>
+              <div class="footer__contact-text">044 235481</div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-title">Servicio VOLAR</div>
+              <div class="footer__contact-text">0800-53386</div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-text">contacto@manuccidiesel.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Sucursales</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Marcas</a></li>
+              <li><a href="#">Contáctanos</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__logo">
+            <img src="./assets/img/logo-manucci-blanco.png" />
+          </div>
+        </div>
+      </div>
+      <div class="container footer__foot">
+        <div class="footer__copy">
+          <div class="footer__copy-text">
+            &copy; Copyright 2023 Manucci Diesel
+          </div>
+          <a href="#">Legal</a>
+          <a href="#">Intranet</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" class="fa-brands fa-facebook-f"></a>
+          <a href="#" class="fa-brands fa-instagram"></a>
+          <a href="#" class="fa-brands fa-linkedin-in"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/b02b8397bc.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const header = document.getElementById("header");
+    const headerLogo = document.getElementById("header_logo");
+
+    const headerScrollClassName = "header--scroll";
+    const headerLogoScrollClassName = "logo--scroll";
+
+    window.addEventListener("scroll", (event) => {
+      if (window.scrollY > 100) {
+        header.classList.add(headerScrollClassName);
+        headerLogo.classList.add(headerLogoScrollClassName);
+      } else {
+        header.classList.remove(headerScrollClassName);
+        headerLogo.classList.remove(headerLogoScrollClassName);
+      }
+    });
+  </script>
+</html>

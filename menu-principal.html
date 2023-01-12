@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu principal</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./menu-prinicipal.css" />
+  </head>
+  <body>
+    <div class="header__top-message">
+      <div class="container">
+        <h3>Tenemos más de 91 años en el sector automotriz</h3>
+        <div class="contact-button">
+          <a href="#contacto">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header__main container">
+        <div class="logo">
+          <div class="logo-container">
+            <img src="./assets/img/logo-manucci-azul.png" alt="Logo Manucci" />
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#inicio">Inicio</a></li>
+            <li class="header__nav-item"><a href="#inicio">Nosotros</a></li>
+            <li class="header__nav-item"><a href="#inicio">Marcas</a></li>
+            <li class="header__nav-item"><a href="#inicio">Servicio</a></li>
+            <li class="header__nav-item"><a href="#inicio">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div style="height: 200rem">a</div>
+  </body>
+  <script>
+    const header = document.getElementById("header");
+    const headerScrollClassName = "header--scroll";
+    window.addEventListener("scroll", (event) => {
+      if (window.scrollY > 100) {
+        header.classList.add(headerScrollClassName);
+      } else {
+        header.classList.remove(headerScrollClassName);
+      }
+    });
+  </script>
+</html>

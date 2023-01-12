@@ -1,0 +1,50 @@
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.service {
+  max-width: 30%;
+  min-width: 20rem;
+}
+
+.service__image {
+  width: 100%;
+}
+
+.service__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.service__body {
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+}
+
+.service__title {
+  color: #0e4880;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.service__list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service__list ul li {
+  position: relative;
+}
+
+.service__list ul li::before {
+  content: "\2713";
+  margin-right: 0.5rem;
+  position: absolute;
+  left: -1.2rem;
+  color: #0e4880;
+  font-weight: bold;
+  transform: scaleX(1.3);
+}
