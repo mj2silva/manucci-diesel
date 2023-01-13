@@ -1,0 +1,132 @@
+.about-us__brands {
+    margin: 4rem auto;
+}
+
+.about-us__brands-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border-bottom: 1px solid #231f20;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-us__brands-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.about-us__brands-logo {
+    max-width: 19rem;
+}
+
+.about-us__brands-logo img {
+    width: 100%;
+}
+
+.about-us-history {
+
+}
+
+.about-us-history__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #135ead;
+    font-size: 4rem;
+    width: 75%;
+    margin: 2rem auto;
+    min-width: 15rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us-history__title {
+        font-size: 2rem;
+        line-height: normal;
+        margin: 2rem auto;
+    }
+}
+
+.about-us-history__summary {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.about-us-history__image {
+    width: 40%;
+    min-width: 20rem;
+}
+
+.about-us-history__text {
+    max-width: 55%;
+    min-width: 20rem;
+}
+
+.about-us-history__text h3 {
+    text-transform: uppercase;
+    color: #182871;
+}
+
+.about-us-history__text p {
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    max-width: 40rem;
+}
+
+.about-us-history__image img {
+    width: 100%;
+}
+
+.about-us-goals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    margin: 4rem auto;
+}
+
+.about-us-goal {
+    min-width: 20rem;
+    width: 30%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.about-us-goal:not(:last-child) {
+    border-right: 1px solid #135ead;
+} 
+
+.about-us-goal__image {
+    width: 5rem;
+}
+
+.about-us-goal img {
+    width: 100%;
+}
+
+.about-us-goal__name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #182871;
+    margin: 1rem auto;
+}
+
+.about-us-goal__text {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.about-us-goal__text ul {
+    margin-left: 0;
+    padding-left: 1rem;
+}
