@@ -6,7 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu principal</title>
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./menu-prinicipal.css" />
+    <link rel="stylesheet" href="./menu-principal.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches:400%7CRoboto:400%2C300&amp;display=swap"
+      rel="stylesheet"
+      property="stylesheet"
+      media="all"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
   </head>
   <body>
     <div class="header__top-message">
@@ -19,33 +46,60 @@
     </div>
     <header class="header" id="header">
       <div class="header__main container">
-        <div class="logo">
+        <div class="logo" id="header_logo">
           <div class="logo-container">
-            <img src="./assets/img/logo-mannucci-azul.png" alt="Logo mannucci" />
+            <img src="/assets/img/logo-mannucci-azul.png" alt="Logo mannucci" />
           </div>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav header__nav--closed" id="nav_bar">
+          <button class="header__close" id="btn_close_nav">
+            <i class="fa-solid fa-times"></i>
+          </button>
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#inicio">Inicio</a></li>
-            <li class="header__nav-item"><a href="#inicio">Nosotros</a></li>
-            <li class="header__nav-item"><a href="#inicio">Marcas</a></li>
-            <li class="header__nav-item"><a href="#inicio">Servicio</a></li>
-            <li class="header__nav-item"><a href="#inicio">Contacto</a></li>
+            <li class="header__nav-item"><a href="/">Inicio</a></li>
+            <li class="header__nav-item"><a href="/nosotros.html">Nosotros</a></li>
+            <li class="header__nav-item"><a href="/marcas.html">Marcas</a></li>
+            <li class="header__nav-item"><a href="/servicios.html">Servicios</a></li>
+            <li class="header__nav-item"><a href="/contacto.html">Contacto</a></li>
           </ul>
         </nav>
+        <button class="header__open" id="btn_open_nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
-    <div style="height: 200rem">a</div>
+    <div style="height: 200rem; background-color: gray;">a</div>
   </body>
   <script>
     const header = document.getElementById("header");
+    const headerLogo = document.getElementById("header_logo");
+
     const headerScrollClassName = "header--scroll";
+    const headerLogoScrollClassName = "logo--scroll";
+
     window.addEventListener("scroll", (event) => {
       if (window.scrollY > 100) {
         header.classList.add(headerScrollClassName);
+        headerLogo.classList.add(headerLogoScrollClassName);
       } else {
         header.classList.remove(headerScrollClassName);
+        headerLogo.classList.remove(headerLogoScrollClassName);
       }
+    });
+
+    const openNavButton = document.getElementById("btn_open_nav");
+    const closeNavButton = document.getElementById("btn_close_nav");
+
+    const nav = document.getElementById("nav_bar");
+
+    openNavButton.addEventListener("click", () => {
+      nav.classList.remove("header__nav--closed");
+      nav.classList.add("header__nav--open");
+    });
+
+    closeNavButton.addEventListener("click", () => {
+      nav.classList.add("header__nav--closed");
+      nav.classList.remove("header__nav--open");
     });
   </script>
 </html>
