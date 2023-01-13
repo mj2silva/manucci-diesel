@@ -269,5 +269,20 @@
         headerLogo.classList.remove(headerLogoScrollClassName);
       }
     });
+
+    const openNavButton = document.getElementById("btn_open_nav");
+    const closeNavButton = document.getElementById("btn_close_nav");
+
+    const nav = document.getElementById("nav_bar");
+
+    openNavButton.addEventListener("click", () => {
+      nav.classList.remove("header__nav--closed");
+      nav.classList.add("header__nav--open");
+    });
+
+    closeNavButton.addEventListener("click", () => {
+      nav.classList.add("header__nav--closed");
+      nav.classList.remove("header__nav--open");
+    });
   </script>
 </html>

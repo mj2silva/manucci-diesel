@@ -51,10 +51,13 @@
       <div class="header__main container">
         <div class="logo" id="header_logo">
           <div class="logo-container">
-            <img src="./assets/img/logo-mannucci-azul.png" alt="Logo mannucci" />
+            <img src="/assets/img/logo-mannucci-azul.png" alt="Logo mannucci" />
           </div>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav header__nav--closed" id="nav_bar">
+          <button class="header__close" id="btn_close_nav">
+            <i class="fa-solid fa-times"></i>
+          </button>
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="/">Inicio</a></li>
             <li class="header__nav-item"><a href="/nosotros.html">Nosotros</a></li>
@@ -63,8 +66,10 @@
             <li class="header__nav-item"><a href="/contacto.html">Contacto</a></li>
           </ul>
         </nav>
+        <button class="header__open" id="btn_open_nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-    </header>
     <section class="banner">
       <!-- <img src="banner.png" /> -->
       <video autoplay muted loop class="banner__video">
@@ -237,6 +242,21 @@
         header.classList.remove(headerScrollClassName);
         headerLogo.classList.remove(headerLogoScrollClassName);
       }
+    });
+
+    const openNavButton = document.getElementById("btn_open_nav");
+    const closeNavButton = document.getElementById("btn_close_nav");
+
+    const nav = document.getElementById("nav_bar");
+
+    openNavButton.addEventListener("click", () => {
+      nav.classList.remove("header__nav--closed");
+      nav.classList.add("header__nav--open");
+    });
+
+    closeNavButton.addEventListener("click", () => {
+      nav.classList.add("header__nav--closed");
+      nav.classList.remove("header__nav--open");
     });
   </script>
 </html>
