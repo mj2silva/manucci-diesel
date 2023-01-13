@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  transform: translateY(-100px);
+  transform: translateY(-500px);
   transition-duration: 250ms;
 }
 
@@ -43,6 +43,7 @@
   height: 80px;
   margin-bottom: -80px;
   z-index: 999999999;
+  overflow: visible;
 }
 
 .header__top-message {
@@ -96,6 +97,8 @@
   margin: 0.5rem;
   font-variant-caps: all-small-caps;
   font-size: 1.5rem;
+  position: relative;
+  overflow: visible;
 }
 
 .header__nav-item a {
@@ -144,6 +147,48 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+.header__nav-submenu {
+  max-height: 0;
+  background-color: white;
+  color: black;
+  position: absolute;
+  transition-duration: 500ms;
+  overflow: hidden;
+  min-width: 10rem;
+  box-sizing: content-box;
+  font-size: 0.8rem;
+}
+
+.header__nav-item:hover .header__nav-submenu {
+  max-height: 30rem;
+  z-index: 999;
+}
+
+.header__nav-submenu ul {
+  padding: 0.5rem 1rem;
+  list-style: none;
+  color: black;
+  margin: 0;
+}
+
+.header__nav-submenu ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+
+.header__nav-submenu ul li a:hover {
+  text-decoration: underline;
+}
+
+.header__nav-submenu ul li {
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 1200px) {
