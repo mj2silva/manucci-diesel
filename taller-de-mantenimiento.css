@@ -8,7 +8,7 @@
 }
 
 .about-us-goal {
-  min-width: 25rem;
+  min-width: 20rem;
   width: 30%;
   padding: 1rem;
   box-sizing: border-box;
@@ -100,7 +100,7 @@
 
 .area-picture {
   width: 48%;
-  min-width: 30rem;
+  min-width: 20rem;
   position: relative;
 }
 
@@ -130,6 +130,7 @@
 
 .maintenance__videos {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
     margin: 4rem auto;
@@ -137,7 +138,7 @@
 
 .maintenance-video {
     width: 48%;
-    min-width: 25rem;
+    min-width: 20rem;
 }
 
 .maintenance-video video {
