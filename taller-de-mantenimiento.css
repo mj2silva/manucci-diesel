@@ -1,0 +1,151 @@
+.about-us-goals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+  margin: 4rem auto;
+}
+
+.about-us-goal {
+  min-width: 25rem;
+  width: 30%;
+  padding: 1rem;
+  box-sizing: border-box;
+  padding: 1rem 5rem;
+  box-sizing: border-box;
+}
+
+.about-us-goal__subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.about-us-goal__image {
+  width: 5rem;
+}
+
+.about-us-goal img {
+  width: 100%;
+}
+
+.about-us-goal__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #182871;
+  margin: 1rem auto;
+}
+
+.about-us-goal__text {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.about-us-goal__text ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.about-us-goal__text ul li {
+  position: relative;
+}
+
+.about-us-goal__text ul li::before {
+  content: "\2713";
+  margin-right: 0.5rem;
+  position: absolute;
+  left: -1.2rem;
+  color: #0e4880;
+  font-weight: bold;
+  transform: scaleX(1.3);
+}
+
+.virtual-tour .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.virtual-tour__message {
+  color: gray;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.virtual-tour .button {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  width: 50%;
+  min-width: fit-content;
+}
+
+.maintenance__areas {
+    margin: 5rem auto;
+}
+
+.maintenance__areas-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.area-picture {
+  width: 48%;
+  min-width: 30rem;
+  position: relative;
+}
+
+.area-picture::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 212, 255, 0) 50%);
+}
+
+.area-picture img {
+  max-width: 100%;
+}
+
+.area-picture div {
+    position: absolute;
+    color: white;
+    bottom: 1.5rem;
+    left: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.maintenance__videos {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 4rem auto;
+}
+
+.maintenance-video {
+    width: 48%;
+    min-width: 25rem;
+}
+
+.maintenance-video video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.maintenance-video h4 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
