@@ -1,0 +1,75 @@
+.branches {
+    margin-bottom: 8rem;
+}
+
+.branches__cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.branch-card {
+    max-width: 25rem;
+    box-sizing: border-box;
+    width: 90%;
+    border: solid 1px grey;
+    padding: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .branch-card {
+        box-sizing: content-box;
+    }
+}
+
+.branch-card__title {
+    color: #0e4880;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.branch-card__subtitle {
+    text-align: center;
+}
+
+.branch-card__icon {
+    color: #0e4880;
+    position: absolute;
+    left: -1.5rem;
+    font-size: 1.2rem;
+    top: 0.2rem;
+}
+
+.branch-card__body {
+    margin: 3rem 0;
+}
+
+.branch-card__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-card__item-title {
+    color: #0e4880;
+    font-weight: 700;
+}
+
+.branch-card__item-text {
+    color: gray;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.branch-card__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    text-transform: uppercase;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}

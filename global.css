@@ -43,3 +43,22 @@ body::-webkit-scrollbar-thumb {
 body {
   scroll-behavior: smooth;
 }
+
+
+.button {
+  background: none;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.button--primary {
+  background-color: #182871;
+  color: white;
+}
+
+.button--secondary {
+  background-color: #0e4880;
+  color: white;
+}
