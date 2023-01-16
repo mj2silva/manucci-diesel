@@ -13,6 +13,7 @@
 .contact__form-element {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact__form-element label {
