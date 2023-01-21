@@ -80,16 +80,25 @@
 }
 
 .banner__arrow {
-  color: white;
-  position: absolute;
+  
+  width: 100%;
+  
+  text-align: center;
   z-index: 99;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.banner__arrow a {
+  color: white;
+  position: absolute;
   text-align: center;
   font-size: 4rem;
   bottom: 2rem;
   font-weight: 100;
+  max-width: fit-content;
+  overflow: hidden;
   animation: grow-shrink 500ms ease alternate-reverse infinite;
 }
 
