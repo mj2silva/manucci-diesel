@@ -1,0 +1,69 @@
+.volar__title {
+  color: #135ead;
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0rem;
+  margin-top: 4rem;
+}
+
+.volar__subtitle {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.volar__cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.volar__card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.volar__card--reverse {
+    flex-direction: row-reverse;
+}
+
+.volar__card-image {
+    width: 50%;
+}
+
+.volar__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volar__card-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .volar__card-text {
+        width: 100%;
+    }
+
+    .volar__card-image {
+        width: 100%;
+    }
+}
+
+.volar__card-text h4 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
