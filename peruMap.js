@@ -25,7 +25,8 @@ const createMap = () => {
     // peruElement.appendChild(svgCanvas);
     // svgCanvas.setAttribute("width", "600");
     // svgCanvas.setAttribute("height", "600");
-    const departments = ["la libertad", "ancash", "huamachuco"];
+    const departments = ["la libertad", "ancash", "cajamarca", "lambayeque", "san martin", "piura"];
+    
     const departmentsSVG = constructDepartments([600, 600]);
     departmentsSVG.forEach((department) => {
         if (departments.includes(department.name)) {
