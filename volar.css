@@ -7,6 +7,11 @@
   margin-top: 4rem;
 }
 
+.volar__title a {
+    text-decoration: none;
+    color: #135ead;
+}
+
 .volar__subtitle {
     font-size: 2.5rem;
     font-weight: lighter;

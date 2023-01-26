@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 7rem;
     border-bottom: 1px solid #231f20;
     padding-bottom: 3rem;
     flex-wrap: wrap;
@@ -96,14 +96,23 @@
 }
 
 .about-us-goal {
+    position: relative;
     min-width: 20rem;
     width: 30%;
     padding: 2rem;
     box-sizing: border-box;
 }
 
-.about-us-goal:not(:last-child) {
-    border-right: 1px solid #135ead;
+.about-us-goal:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 70%;
+    background-color: #135ead;
+    width: 1px;
+    margin: auto;
 } 
 
 .about-us-goal__image {

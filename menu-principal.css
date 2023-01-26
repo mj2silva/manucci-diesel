@@ -113,7 +113,7 @@
   background-color: #182871;
   color: white;
   padding: 0.8rem 0.5rem;
-  z-index: 99;
+  z-index: 9999999999;
   padding-top: 0.5rem;
 }
 
