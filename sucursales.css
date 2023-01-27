@@ -1,5 +1,40 @@
 .branches {
-    margin-bottom: 8rem;
+    display: flex;
+    width: 40%;
+    position: relative;
+}
+
+.branches__button {
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transform: translate(0);
+}
+
+#branches_up {
+    top: -2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#branches_down {
+    bottom: -3.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.branches__map {
+    width: 55%;
+    margin: auto;
+    height: 100%;
 }
 
 .branches__cards {
@@ -7,21 +42,24 @@
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 2rem 0;
-    width: 100%;
+    margin: 0;
 }
 
 .branch-card {
-    max-width: 25rem;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     border: solid 1px grey;
-    padding: 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 15rem;
 }
 
 @media screen and (max-width: 768px) {
     .branch-card {
-        box-sizing: content-box;
+        box-sizing: border-box;
+        height: 18rem;
     }
 }
 
@@ -29,47 +67,84 @@
     color: #0e4880;
     text-transform: uppercase;
     margin: 0;
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
 }
 
 .branch-card__subtitle {
-    text-align: center;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.branch-card__bg {
+    background-color: silver;
+    color: #0e4880;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-weight: 700;
 }
 
 .branch-card__icon {
     color: #0e4880;
     position: absolute;
-    left: -1.5rem;
+    left: 0rem;
     font-size: 1.2rem;
     top: 0.2rem;
 }
 
 .branch-card__body {
-    margin: 3rem 0;
+    margin: 0rem 0;
+    width: 50%;
 }
 
 .branch-card__item {
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
+    
 }
 
 .branch-card__item-title {
     color: #0e4880;
     font-weight: 700;
+    font-size: 0.8rem;
 }
 
 .branch-card__item-text {
     color: gray;
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .branch-card__buttons {
     display: flex;
     flex-direction: column;
-    width: 110%;
     text-transform: uppercase;
     gap: 0.5rem;
     margin: 1rem 0;
+    width: 40%;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+}
+
+
+.branch-card__hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .branches {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .branches__map {
+        width: 100%;
+        aspect-ratio: 9 / 16;
+    }
 }
